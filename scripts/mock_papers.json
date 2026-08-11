@@ -1,0 +1,252 @@
+[
+  {
+    "id": "1706.03762",
+    "title": "Attention Is All You Need",
+    "abstract": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. The Transformer allows for significantly more parallelization and reaches a new state of the art in translation quality.",
+    "year": 2017,
+    "url": "https://arxiv.org/abs/1706.03762",
+    "venue": "arXiv",
+    "authors": ["Ashish Vaswani", "Noam Shazeer", "Niki Parmar", "Jakob Uszkoreit", "Llion Jones", "Aidan N. Gomez", "Lukasz Kaiser", "Illia Polosukhin"],
+    "categories": ["cs.CL", "cs.LG"]
+  },
+  {
+    "id": "1810.04805",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "abstract": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks.",
+    "year": 2018,
+    "url": "https://arxiv.org/abs/1810.04805",
+    "venue": "arXiv",
+    "authors": ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"],
+    "categories": ["cs.CL", "cs.LG"]
+  },
+  {
+    "id": "2005.14165",
+    "title": "Language Models are Few-Shot Learners",
+    "abstract": "We demonstrate that scaling up language models greatly improves few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, and evaluate its performance on a wide range of NLP tasks. We show that GPT-3 achieves strong performance under few-shot, one-shot, and zero-shot settings.",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2005.14165",
+    "venue": "arXiv",
+    "authors": ["Tom B. Brown", "Benjamin Mann", "Nick Ryder", "Melanie Subbiah", "Jared Kaplan", "Prafulla Dhariwal", "Arvind Neelakantan", "Pranav Shyam", "Girish Sastry", "Amanda Askell"],
+    "categories": ["cs.CL", "cs.LG", "cs.AI"]
+  },
+  {
+    "id": "1512.03385",
+    "title": "Deep Residual Learning for Image Recognition",
+    "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those previously used. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth.",
+    "year": 2015,
+    "url": "https://arxiv.org/abs/1512.03385",
+    "venue": "arXiv",
+    "authors": ["Kaiming He", "Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"],
+    "categories": ["cs.CV", "cs.LG", "cs.NE"]
+  },
+  {
+    "id": "1506.02640",
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "abstract": "We present YOLO, a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance.",
+    "year": 2015,
+    "url": "https://arxiv.org/abs/1506.02640",
+    "venue": "arXiv",
+    "authors": ["Joseph Redmon", "Santosh Divvala", "Ross Girshick", "Ali Farhadi"],
+    "categories": ["cs.CV", "cs.AI"]
+  },
+  {
+    "id": "1412.6980",
+    "title": "Adam: A Method for Stochastic Optimization",
+    "abstract": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters.",
+    "year": 2014,
+    "url": "https://arxiv.org/abs/1412.6980",
+    "venue": "arXiv",
+    "authors": ["Diederik P. Kingma", "Jimmy Ba"],
+    "categories": ["cs.LG", "math.OC", "cs.NE"]
+  },
+  {
+    "id": "2010.11929",
+    "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+    "abstract": "While the Transformer architecture has become the de facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure Transformer applied directly to sequences of image patches can perform very well on image classification tasks.",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2010.11929",
+    "venue": "arXiv",
+    "authors": ["Alexey Dosovitskiy", "Lucas Beyer", "Alexander Kolesnikov", "Dirk Weissenborn", "Xiaohua Zhai", "Thomas Unterthiner", "Mostafa Dehghani", "Matthias Minderer", "Georg Heigold", "Sylvain Gelly", "Jakob Uszkoreit", "Neil Houlsby"],
+    "categories": ["cs.CV", "cs.LG", "cs.NE"]
+  },
+  {
+    "id": "2106.09685",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to specific tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks.",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2106.09685",
+    "venue": "arXiv",
+    "authors": ["Edward J. Hu", "Yelong Shen", "Phillip Wallis", "Zeyuan Allen-Zhu", "Yuanzhi Li", "Shean Wang", "Lu Wang", "Weizhu Chen"],
+    "categories": ["cs.CL", "cs.LG", "cs.AI"]
+  },
+  {
+    "id": "2305.18290",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "abstract": "While large-scale unsupervised language models learn broad world knowledge and some reasoning skills, achieving precise control over their behavior requires alignment techniques like RLHF. We present Direct Preference Optimization (DPO), a simple and stable algorithm to align language models without training a separate reward model or using reinforcement learning. DPO optimizes the policy directly with a simple classification loss.",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2305.18290",
+    "venue": "arXiv",
+    "authors": ["Rafael Rafailov", "Archit Sharma", "Eric Mitchell", "Stefano Ermon", "Christopher D. Manning", "Chelsea Finn"],
+    "categories": ["cs.LG", "cs.CL", "cs.AI"]
+  },
+  {
+    "id": "1406.2661",
+    "title": "Generative Adversarial Nets",
+    "abstract": "We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game.",
+    "year": 2014,
+    "url": "https://arxiv.org/abs/1406.2661",
+    "venue": "arXiv",
+    "authors": ["Ian J. Goodfellow", "Jean Pouget-Abadie", "Mehdi Mirza", "Bing Xu", "David Warde-Farley", "Sherjil Ozair", "Aaron Courville", "Yoshua Bengio"],
+    "categories": ["cs.LG", "cs.NE", "cs.AI"]
+  },
+  {
+    "id": "1706.03741",
+    "title": "Deep Reinforcement Learning from Human Preferences",
+    "abstract": "To deploy RL in real-world systems, we must define goals that align with human values. We present an algorithm that learns a reward function from pairwise comparisons of trajectory segments, allowing non-expert humans to safely guide complex RL agents. We demonstrate that this approach can solve complex robotic tasks without access to the environment's true reward function.",
+    "year": 2017,
+    "url": "https://arxiv.org/abs/1706.03741",
+    "venue": "arXiv",
+    "authors": ["Paul F. Christiano", "Jan Leike", "Tom B. Brown", "Miljan Martic", "Shane Legg", "Dario Amodei"],
+    "categories": ["cs.LG", "cs.AI", "cs.RO"]
+  },
+  {
+    "id": "2005.11401",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "abstract": "Large pre-trained language models have been shown to store implicit knowledge in their parameters, but their ability to access and precisely manipulate knowledge is still limited. We propose Retrieval-Augmented Generation (RAG), which combines pre-trained parametric and non-parametric memory for generation. We show that RAG models produce more factual, specific, and diverse responses than parametric-only models.",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2005.11401",
+    "venue": "arXiv",
+    "authors": ["Patrick Lewis", "Ethan Perez", "Aleksandra Piktus", "Fabio Petroni", "Vladimir Karpukhin", "Naman Goyal", "Heinrich Küttler", "Mike Lewis", "Wen-tau Yih", "Sebastian Riedel", "Douwe Kiela"],
+    "categories": ["cs.CL", "cs.IR", "cs.AI"]
+  },
+  {
+    "id": "2103.00020",
+    "title": "Learning Transferable Visual Models From Natural Language Supervision",
+    "abstract": "State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability. We present CLIP, which learns visual representations directly from raw text about images. We demonstrate that simple pre-training of predicting which caption goes with which image is highly efficient and scalable, enabling zero-shot transfer to diverse datasets.",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2103.00020",
+    "venue": "arXiv",
+    "authors": ["Alec Radford", "Jong Wook Kim", "Chris Hallacy", "Aditya Ramesh", "Gabriel Goh", "Sandhini Agarwal", "Girish Sastry", "Amanda Askell", "Pamela Mishkin", "Jack Clark", "Gretchen Krueger", "Ilya Sutskever"],
+    "categories": ["cs.CV", "cs.CL", "cs.LG"]
+  },
+  {
+    "id": "2003.08934",
+    "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+    "abstract": "We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views. Our algorithm represents a static scene as a continuous 5D function that outputs radiance and volume density at each spatial location. We optimize a deep fully-connected neural network to represent this function.",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2003.08934",
+    "venue": "arXiv",
+    "authors": ["Ben Mildenhall", "Pratul P. Srinivasan", "Matthew Tancik", "Jonathan T. Barron", "Ramamoorthi Ramamoorthi", "Ren Ng"],
+    "categories": ["cs.CV", "cs.NE"]
+  },
+  {
+    "id": "2307.09288",
+    "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "abstract": "We develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters. Our fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases. Our models outperform open-source chat models on most benchmarks we tested, and based on our human evaluations for helpfulness and safety, may be a suitable substitute for closed-source models.",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2307.09288",
+    "venue": "arXiv",
+    "authors": ["Hugo Touvron", "Louis Martin", "Kevin Stone", "Abhimanyu Dubey", "Amjad Almahairi", "Yasmine Babaei", "Nikolay Bashlykov", "Soumya Batra", "Prajjwal Bhargava", "Shruti Bhosale"],
+    "categories": ["cs.CL", "cs.AI", "cs.LG"]
+  },
+  {
+    "id": "2205.14135",
+    "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+    "abstract": "Transformers are slow and memory-efficient on long sequences, since the time and memory complexity of self-attention are quadratic in sequence length. We propose FlashAttention, an IO-aware exact attention algorithm that uses tiling to reduce the number of memory reads/writes between GPU High Bandwidth Memory (HBM) and GPU SRAM. We show that FlashAttention speeds up Transformer training and enables longer context windows.",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2205.14135",
+    "venue": "arXiv",
+    "authors": ["Tri Dao", "Daniel Y. Fu", "Stefano Ermon", "Atri Rudra", "Christopher Ré"],
+    "categories": ["cs.LG", "cs.NE"]
+  },
+  {
+    "id": "2206.07682",
+    "title": "Emergent Abilities of Large Language Models",
+    "abstract": "Scaling up language models has been shown to predictably improve performance and sample efficiency on a wide range of downstream tasks. However, the performance on certain tasks cannot be predicted simply by extrapolating the performance of smaller models. We discuss emergent abilities of large language models, which are not present in smaller models but appear in larger models, and highlight their implications for future AI research.",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2206.07682",
+    "venue": "arXiv",
+    "authors": ["Jason Wei", "Yi Tay", "Rishi Bommasani", "Colin Raffel", "Barret Zoph", "Sebastian Borgeaud", "Dani Yogatama", "Maarten Bosma", "Denny Zhou", "Donald Metzler"],
+    "categories": ["cs.CL", "cs.AI"]
+  },
+  {
+    "id": "2002.12327",
+    "title": "A Primer on BERTology: What We Know About How BERT Works",
+    "abstract": "Transformer-based models have revolutionized NLP, with BERT being the most prominent example. We present a survey of 'BERTology', the field of study dedicated to analyzing the inner workings and representations learned by BERT-style models. We summarize findings regarding what types of knowledge BERT learns, where this knowledge is represented, and how it can be compressed.",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2002.12327",
+    "venue": "arXiv",
+    "authors": ["Anna Rogers", "Olga Kovaleva", "Anna Rumshisky"],
+    "categories": ["cs.CL", "cs.AI"]
+  },
+  {
+    "id": "2201.11903",
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "abstract": "We explore how generating a chain of thought—a series of intermediate reasoning steps—significantly improves the ability of large language models to perform complex reasoning. We show that chain-of-thought prompting emerges naturally with scale, enabling models to solve multi-step math, symbolic, and commonsense reasoning problems that standard prompting fails to address.",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2201.11903",
+    "venue": "arXiv",
+    "authors": ["Jason Wei", "Xuezhi Wang", "Dale Schuurmans", "Maarten Bosma", "Brian Ichter", "Fei-Fei Li", "Ed H. Chi", "Quoc V. Le", "Denny Zhou"],
+    "categories": ["cs.CL", "cs.AI"]
+  },
+  {
+    "id": "2103.14030",
+    "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+    "abstract": "We present Swin Transformer, a new vision Transformer that serves as a general-purpose backbone for computer vision. Swin Transformer limits self-attention computation to non-overlapping local windows while also allowing for cross-window connection, yielding linear computational complexity. It achieves state-of-the-art performance on image classification, object detection, and semantic segmentation.",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2103.14030",
+    "venue": "arXiv",
+    "authors": ["Ze Liu", "Yutong Lin", "Yue Cao", "Han Hu", "Yixuan Wei", "Zheng Zhang", "Stephen Lin", "Baining Guo"],
+    "categories": ["cs.CV", "cs.LG"]
+  },
+  {
+    "id": "1909.00001",
+    "title": "Language Models are Unsupervised Multitask Learners",
+    "abstract": "Natural language processing systems are typically trained on single task datasets. We demonstrate that language models can perform downstream tasks in a zero-shot setting without any parameter or architecture modifications, when trained on a new dataset of millions of webpages called WebText. We train GPT-2, a 1.5B parameter Transformer, which achieves state-of-the-art results on 7 out of 8 tested language modeling datasets.",
+    "year": 2019,
+    "url": "https://arxiv.org/abs/1909.00001",
+    "venue": "arXiv",
+    "authors": ["Alec Radford", "Jeffrey Wu", "Rewon Child", "David Luan", "Dario Amodei", "Ilya Sutskever"],
+    "categories": ["cs.CL", "cs.LG", "cs.AI"]
+  },
+  {
+    "id": "2102.12092",
+    "title": "Zero-Shot Text-to-Image Generation",
+    "abstract": "Text-to-image generation has traditionally focused on finding better generative models on small, task-specific datasets. We show that scaling autoregressive Transformers to model text and image tokens as a single stream of data enables zero-shot text-to-image generation when trained on a large dataset of text-image pairs. We describe DALL-E, a 12-billion parameter model that controls image generation from natural language descriptions.",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2102.12092",
+    "venue": "arXiv",
+    "authors": ["Aditya Ramesh", "Mikhail Pavlov", "Gabriel Goh", "Scott Gray", "Chelsea Finn", "Dario Amodei", "Ilya Sutskever"],
+    "categories": ["cs.CV", "cs.CL", "cs.AI"]
+  },
+  {
+    "id": "2212.08073",
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "abstract": "As language models scale, aligning them with human values using RLHF becomes increasingly human-labor intensive. We propose Constitutional AI, a method to train harmless assistants without human feedback labels for safety. Instead, the model aligns itself based on a set of rules or 'constitution'. The process involves a supervised learning phase (critique and revision) followed by RL from AI feedback.",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2212.08073",
+    "venue": "arXiv",
+    "authors": ["Yuntao Bai", "Saurav Kadavath", "Sandeep Kundu", "Amanda Askell", "Jackson Kernion", "Andy Jones", "Anna Chen", "Anna Goldie"],
+    "categories": ["cs.CL", "cs.LG", "cs.AI"]
+  },
+  {
+    "id": "1601.00002",
+    "title": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+    "abstract": "The game of Go has long been viewed as the most challenging classic game for artificial intelligence due to its enormous search space. We introduce AlphaGo, a computer Go program that combines deep neural networks with Monte Carlo tree search. AlphaGo evaluates positions and selects moves using value networks and policy networks, trained using supervised learning and reinforcement learning from self-play.",
+    "year": 2016,
+    "url": "https://arxiv.org/abs/1601.00002",
+    "venue": "arXiv",
+    "authors": ["David Silver", "Aja Huang", "Chris J. Maddison", "Arthur Guez", "Laurent Sifre", "George van den Driessche", "Julian Schrittwieser", "Ioannis Antonoglou", "Demis Hassabis"],
+    "categories": ["cs.AI", "cs.LG", "cs.GT"]
+  },
+  {
+    "id": "2107.03322",
+    "title": "Highly accurate protein structure prediction with AlphaFold",
+    "abstract": "Proteins are essential to life, and understanding their 3D structure is key to understanding their function. However, determining protein structure experimentally is slow and expensive. We present AlphaFold, a novel machine learning model that predicts protein structures with atomic accuracy. AlphaFold incorporates physical and biological knowledge about protein structure, multi-sequence alignments, and deep neural network design.",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2107.03322",
+    "venue": "arXiv",
+    "authors": ["John Jumper", "Richard Evans", "Alexander Pritzel", "Tim Green", "Michael Figurnov", "Olaf Ronneberger", "Katharine Tunis", "Demis Hassabis"],
+    "categories": ["cs.LG", "cs.AI", "cs.NE"]
+  }
+]
