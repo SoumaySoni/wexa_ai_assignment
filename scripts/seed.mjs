@@ -174,10 +174,56 @@ function parseArxivXML(xml) {
 // ── Build citation proxy graph ──────────────────────────────────────────────
 function buildCitations(papers) {
   const citations = [];
-  const papersByAuthor = {};
+  
+  // 1. Check if we are using the mock papers dataset
+  const isMockDataset = papers.some(p => p.id === '1706.03762');
+  
+  if (isMockDataset) {
+    const mockCitations = [
+      // Papers citing "Attention Is All You Need" (1706.03762)
+      { from: '1810.04805', to: '1706.03762' }, // BERT -> Attention
+      { from: '2005.14165', to: '1706.03762' }, // GPT-3 -> Attention
+      { from: '1909.00001', to: '1706.03762' }, // GPT-2 -> Attention
+      { from: '2305.18290', to: '1706.03762' }, // DPO -> Attention
+      { from: '2307.09288', to: '1706.03762' }, // Llama 2 -> Attention
+      { from: '2010.11929', to: '1706.03762' }, // ViT -> Attention
+      { from: '2103.14030', to: '1706.03762' }, // Swin Transformer -> Attention
+      { from: '2102.12092', to: '1706.03762' }, // DALL-E -> Attention
+      { from: '2103.00020', to: '1706.03762' }, // CLIP -> Attention
+      { from: '2106.09685', to: '1706.03762' }, // LoRA -> Attention
+      { from: '2205.14135', to: '1706.03762' }, // FlashAttention -> Attention
+      { from: '2201.11903', to: '1706.03762' }, // Chain-of-Thought -> Attention
+      { from: '2212.08073', to: '1706.03762' }, // Constitutional AI -> Attention
+      
+      // Papers citing "GPT-3" (2005.14165)
+      { from: '2305.18290', to: '2005.14165' }, // DPO -> GPT-3
+      { from: '2307.09288', to: '2005.14165' }, // Llama 2 -> GPT-3
+      { from: '2102.12092', to: '2005.14165' }, // DALL-E -> GPT-3
+      { from: '2106.09685', to: '2005.14165' }, // LoRA -> GPT-3
+      { from: '2205.14135', to: '2005.14165' }, // FlashAttention -> GPT-3
+      { from: '2206.07682', to: '2005.14165' }, // Emergent Abilities -> GPT-3
+      { from: '2201.11903', to: '2005.14165' }, // Chain-of-Thought -> GPT-3
+      { from: '2212.08073', to: '2005.14165' }, // Constitutional AI -> GPT-3
+      
+      // Papers citing "ResNet" (1512.03385)
+      { from: '2103.00020', to: '1512.03385' }, // CLIP -> ResNet
+      { from: '2010.11929', to: '1512.03385' }, // ViT -> ResNet
+      { from: '2103.14030', to: '1512.03385' }, // Swin -> ResNet
+      
+      // Other citations
+      { from: '2103.14030', to: '2010.11929' }, // Swin -> ViT
+      { from: '2305.18290', to: '2212.08073' }, // DPO -> Constitutional AI
+      { from: '2212.08073', to: '1706.03741' }, // Constitutional AI -> RLHF
+      { from: '2305.18290', to: '1706.03741' }  // DPO -> RLHF
+    ];
+    const paperIds = new Set(papers.map(p => p.id));
+    return mockCitations.filter(c => paperIds.has(c.from) && paperIds.has(c.to));
+  }
 
+  // 2. Dynamic generation (fallback for arXiv data)
+  const papersByAuthor = {};
   for (const paper of papers) {
-    for (const author of paper.authors.slice(0, 2)) {
+    for (const author of paper.authors.slice(0, 4)) {
       if (!papersByAuthor[author]) papersByAuthor[author] = [];
       papersByAuthor[author].push(paper.id);
     }
@@ -185,7 +231,7 @@ function buildCitations(papers) {
 
   const citationSet = new Set();
   for (const paper of papers) {
-    for (const author of paper.authors.slice(0, 2)) {
+    for (const author of paper.authors.slice(0, 4)) {
       const siblings = (papersByAuthor[author] || []).filter(id => id !== paper.id);
       for (const sibling of siblings.slice(0, 3)) {
         const key = `${paper.id}→${sibling}`;
