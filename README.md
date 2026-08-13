@@ -198,5 +198,8 @@ wexa_ai/
 
 ## Screenshots
 
-*(Add screenshots here after running the app)*
+<img width="1919" height="833" alt="image" src="https://github.com/user-attachments/assets/11ced39b-be3f-4802-b52b-06a817a8fa38" />
+<img width="1891" height="846" alt="image" src="https://github.com/user-attachments/assets/593c1743-145d-4e20-afb1-1afaa185cf13" />
+<img width="1871" height="851" alt="image" src="https://github.com/user-attachments/assets/1ac0b201-5002-4794-9e2c-0e64efcd6c49" />
+
 #
